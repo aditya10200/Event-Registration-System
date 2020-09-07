@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "ViewEventData";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+
+}
+<h2> <center>Event Details </center> </h2>
+<table class=" table">
+    <tr>
+        <th> Id </th>
+        <th> GuestNumber </th>
+        <th> PaymentAmount </th>
+        <th> EventName </th>
+        <th> Email </th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.Id </td>
+            <td> @i.GuestNumber </td>
+            <td> @i.PaymentAmount </td>
+            <td> @i.EventName </td>
+            <td> @i.Email </td>
+        </tr>
+    }
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

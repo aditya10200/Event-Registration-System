@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+@*<div class="landing-grid">*@
+    <head>
+       
+
+        <style>
+            h2 {
+                text-align: center;
+            }
+
+            div {
+                text-align: center;
+            }
+
+            form {
+                margin: 0 auto;
+                text-align: center;
+                background-color: transparent;
+                width: 900px;
+                border: 15px solid Blue;
+                padding: 100px;
+            }
+        </style>
+        <script>
+            function validateForm()
+            {
+                var x = document.forms["myForm"]["FullName"].value;
+                if (x == "")
+                {
+                    alert("Name must be filled out");
+                    return false;
+                }
+            }
+
+            {
+                var x = document.forms["myForm"]["Age"].value;
+                if (x == "") {
+                    alert("Age must be filled out");
+                    return false;
+                }
+            }
+
+            {
+                var x = document.forms["myForm"]["Email"].value;
+                if (x == "") {
+                    alert("Email must be filled out");
+                    return false;
+                }
+            }
+
+            {
+                var x = document.forms["myForm"]["Address"].value;
+                if (x == "") {
+                    alert("Address must be filled out");
+                    return false;
+                }
+            }
+
+            {
+                var x = document.forms["myForm"]["Phone"].value;
+                if (x == "") {
+                    alert("Phone must be filled out");
+                    return false;
+                }
+            }
+        </script>
+
+    </head>
+    <br />
+    <br />
+    <br />
+
+    <h2> Event </h2>
+
+
+    <h2> Registration Form </h2>
+    <form name="myForm" action="~/User/addClient"
+        onsubmit="return validateForm()" method="post">
+        <center>
+            <b> FullName:</b> <br><input type="text" name="FullName" required />
+        </center><br />
+        <center>
+            <b>  Age:</b> <br><input type="text" name="Age" required />
+        </center><br />
+        <center>
+            <b> Email:</b> <br><input type="text" name="Email" required/>
+        </center><br />
+        <center>
+            <b>Address:</b> <br><input type="text" name="Address" required />
+        </center><br />
+        <center>
+            <b>Phone:</b> <br><input type="text" name="Phone" required/>
+        </center><br />
+        <input type="submit" />
+
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+

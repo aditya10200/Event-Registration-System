@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1Model1StoreContainer" CdmEntityContainer="Database1Entities2">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="Database1Model1.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Email_" ColumnName="Email " />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registers">
+      <EntityTypeMapping TypeName="Database1Model1.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GuestNumber" ColumnName="GuestNumber" />
+          <ScalarProperty Name="PaymnetAmount" ColumnName="PaymnetAmount" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

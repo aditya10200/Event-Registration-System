@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link href="~/template/responsive.css" rel="stylesheet" />
+    <link href="~/template/style.css" rel="stylesheet" />
+
+    <link href="~/template/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/template/css/flexslider.css" rel="stylesheet" />
+    <link href="~/template/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/template/css/icofont.css" rel="stylesheet" />
+    <link href="~/template/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/template/css/jQuery.verticalCarousel.css" rel="stylesheet" />
+    <link href="~/template/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/template/css/owl.theme.default.min.css" rel="stylesheet" />
+
+    <script src="~/template/js/active.js"></script>
+    <script src="~/template/js/bootstrap.min.js"></script>
+    <script src="~/template/js/jquery-3.1.1.min.js"></script>
+    <script src="~/template/js/jquery-ui.js"></script>
+    <script src="~/template/js/jquery.flexslider.js"></script>
+    <script src="~/template/js/jQuery.verticalCarousel.js"></script>
+    <script src="~/template/js/owl.carousel.min.js"></script>
+
+    <link href="~/MyCss/StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+   
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-12">
+                        <div class="logo">
+                            <a href="/HandleHomePage/index"><img src="~/template/img/BELogo.jpg.png" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-9 col-xs-12">
+                        <div class="menu">
+                            <ul class="nav navbar-nav">
+                                @*<li class="active"> <a href="/HandleHomePage/index"> Home </a></li>*@
+                                <li><a href="/User/Index"> Client Registration </a></li>
+                                <li><a href="/ViewData/Index"> LookUp Client </a></li>
+                                <li><a href="/Event/Index"> Add Event</a></li>
+                                <li><a href="/ViewData/ViewEventData"> LookUp Event </a></li>
+                                <li><a href="/Search/index"> Search Event </a></li>
+                            </ul>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text">
+                            <h3>Bringing People Together</h3>
+                            <h6>
+                                Bright Events is the largest event technology platform, powering millions of events. We’re building intuitive technology to help you create, promote, manage, and do more with your events — so you can spend less time working on them and more time creating meaningful live experiences.
+
+                            </h6>
+                            <a class="button" href="/UpdateClient/Index"> Update Client </a> 
+                            <a class="button" href="/EventDelete/Index"> Delete Event</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header_video">
+                            <iframe src="https://www.youtube.com/embed/ZuHoVZn8sOE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="project">
+            <div class="text">
+                <h2>Welcome to BRight EVents</h2>
+                <h4>Easy & Useful</h4>
+                <p>BRight EVent is an online DIY event registration and booking system, suitable for schools, councils, sporting clubs, community groups, arts organisations, businesses and any other organisation taking registrations online. Get instant access to your participants' information in a simple, clean format that can be easily managed. Reduce all of the tedious data entry jobs and get started with our event registration software. </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 project_icon">
+                        <div class="single_project">
+                            <i class="icofont icofont-tasks-alt"></i>
+                            <h3><a href="#">No more paper forms</a></h3>
+                            <p>
+                                Move your system to a cloud-based platform and reap the benefits of a paperless system.Your customers can access your registration page through a unique URL and are then guided through the steps to complete their registration. They receive an electronic confirmation via email and your account is updated immediately for the transaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 project_icon">
+                        <div class="single_project">
+                            <i class="icofont icofont-team"></i>
+                            <h3><a href="#">Data Collection</a></h3>
+                            <p>With BRight EVent, you can ask your customers for additional information during the booking process. The questions can be mandatory or optional. Ask anything from dietary requirements to their member number.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 project_icon">
+                        <div class="single_project">
+                            <i class="icofont icofont-worker"></i>
+                            <h3><a href="#">Intuitive event creation to set up your events and start selling tickets</a></h3>
+                            <p>Intuitive event creation to set up your events and start selling tickets</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="button"><a class="button" href="#">Get started</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-logo">
+                            <a href="#"><img src="~/template/img/BELogo.jpg.png" alt=""></a>
+                        </div>
+                        <div class="footer_first_menu">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">About Us</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="footer_last_menu">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <ul>
+                                        <li class="active"> <a href="/HandleHomePage/index"> Home </a></li>
+                                        <li><a href="/User/Index"> Client Registration </a></li>
+                                        <li><a href="/ViewData/Index"> LookUp Client </a></li>
+                                        <li><a href="/Event/Index"> Add Event</a></li>
+                                        <li><a href="/ViewData/ViewEventData"> LookUp Event </a></li>
+                                        <li><a href="/Search/index"> Search Event </a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="footer_last_icon">
+                                    <p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jQuery.verticalCarousel.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/active.js"></script>
+
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Aditya Garg</p>
+    </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>

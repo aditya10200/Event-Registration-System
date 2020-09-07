@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Email_" />
+    </Key>
+    <Property Name="Email_" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Registers" Relationship="Self.FK_Table_Client" FromRole="Client" ToRole="Register" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GuestNumber" Type="Int32" Nullable="false" />
+    <Property Name="PaymnetAmount" Type="Double" Nullable="false" />
+    <Property Name="EventName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Table_Client" FromRole="Register" ToRole="Client" />
+  </EntityType>
+  <Association Name="FK_Table_Client">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="Register" Type="Self.Register" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Email_" />
+      </Principal>
+      <Dependent Role="Register">
+        <PropertyRef Name="Email" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Registers" EntityType="Self.Register" />
+    <AssociationSet Name="FK_Table_Client" Association="Self.FK_Table_Client">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Register" EntitySet="Registers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

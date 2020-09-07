@@ -1,0 +1,129 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Online Event Registration </title>
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link href="~/template/responsive.css" rel="stylesheet" />
+    <link href="~/template/style.css" rel="stylesheet" />
+
+    <link href="~/template/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/template/css/flexslider.css" rel="stylesheet" />
+    <link href="~/template/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/template/css/icofont.css" rel="stylesheet" />
+    <link href="~/template/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/template/css/jQuery.verticalCarousel.css" rel="stylesheet" />
+    <link href="~/template/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/template/css/owl.theme.default.min.css" rel="stylesheet" />
+
+    <script src="~/template/js/active.js"></script>
+    <script src="~/template/js/bootstrap.min.js"></script>
+    <script src="~/template/js/jquery-3.1.1.min.js"></script>
+    <script src="~/template/js/jquery-ui.js"></script>
+    <script src="~/template/js/jquery.flexslider.js"></script>
+    <script src="~/template/js/jQuery.verticalCarousel.js"></script>
+    <script src="~/template/js/owl.carousel.min.js"></script>
+
+    <link href="~/MyCss/StyleSheet1.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="headers">
+
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-12">
+                        <div class="logo">
+                            <a href="/HandleHomePage/index"><img src="~/template/img/BELogo.jpg.png" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-9 col-xs-12">
+                        <div class="menu">
+                            <ul class="nav navbar-nav">
+                                <li class="active"> <a href="/HandleHomePage/index"> Home </a></li>
+                                <li><a href="/User/Index"> Client Registration </a></li>
+                                <li><a href="/ViewData/Index"> LookUp Client </a></li>
+                                <li><a href="/Event/Index"> Add Event</a></li>
+                                <li><a href="/Search/index"> Search Event </a></li>
+                                <li><a href="/UpdateClient/Index"> Update Client </a></li>
+                                <li><a href="/EventDelete/Index"> Event Delete </a></li>
+                            </ul>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+            @RenderBody();
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="footer-logo">
+                                @*<a href="#"><img src="~/template/img/BELogo.jpg.png" alt=""></a>*@
+                            </div>
+                            <div class="footer_first_menu">
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">About Us</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="footer_last_menu">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <ul>
+                                            <li class="active"> <a href="/HandleHomePage/index"> Home </a></li>
+                                            <li><a href="/User/Register"> Client Registration </a></li>
+                                            <li><a href="/ViewData/Index"> LookUp Client </a></li>
+                                            <li><a href="/Event/index"> Add Event</a></li>
+                                            <li><a href="/Search/index"> Search Event </a></li>
+                                            <li><a href="/UpdateClient/Index"> Update Client </a></li>
+                                            <li><a href="/EventDelete/Index"> Event Delete </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="footer_last_icon">
+                                        <p><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</div>
+</body>
+</html>
+
